@@ -7,7 +7,7 @@ import { Typewriter } from "react-simple-typewriter";
 const AboutMe = () => {
   return (
     <div className="flex items-center min-h-[calc(100vh-5rem)] max-w-[70vw] justify-center mx-auto">
-      <div className="flex flex-row items-center gap-9">
+      <div className="flex flex-col items-center gap-9 lg:flex-row">
         <motion.div
           initial={{ x: -100, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
@@ -18,7 +18,7 @@ const AboutMe = () => {
             alt="main-page-picture"
             width={400}
             height={400}
-            className="rounded-lg max-w-[400px] w-full h-auto min-w-[400px]"
+            className="rounded-lg max-w-[300px] w-full h-auto min-w-[300px]"
           />
         </motion.div>
         <motion.div
