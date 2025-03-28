@@ -6,6 +6,13 @@ import Hamburger from "../hamburger";
 import { motion } from "framer-motion";
 
 const Navbar = () => {
+  const scrollToExpertAt = () => {
+    const element = document.getElementById("expert-at");
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   const [isOpen, setIsOpen] = useState(false);
   return (
     <div className="flex items-center justify-between flex-row min-h-20">
@@ -26,7 +33,7 @@ const Navbar = () => {
       >
         <div className="flex-row justify-center gap-9 m-5 font-semibold md:flex hidden flex-2/3 pt-1">
           <Link
-            href="#"
+            href="#expert-at"
             className="relative after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-0 after:bg-black after:transition-all after:duration-300 after:ease-in-out hover:after:w-full dark:after:bg-white"
           >
             Contact
@@ -36,6 +43,13 @@ const Navbar = () => {
             className="relative after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-0 after:bg-black after:transition-all after:duration-300 after:ease-in-out hover:after:w-full dark:after:bg-white whitespace-nowrap"
           >
             About Me
+          </Link>
+          <Link
+            href="#expert-at"
+            onClick={scrollToExpertAt}
+            className="relative after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-0 after:bg-black after:transition-all after:duration-300 after:ease-in-out hover:after:w-full dark:after:bg-white whitespace-nowrap"
+          >
+            Expert At
           </Link>
           <Link
             href="#"

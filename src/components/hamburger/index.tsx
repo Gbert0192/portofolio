@@ -35,7 +35,7 @@ const Hamburger: React.FC<HamburgerProps> = ({ isOpen, setIsOpen }) => {
             <SheetTitle className="mb-5">Navigation</SheetTitle>
             <SheetDescription className="flex flex-col font-semibold gap-3">
               <Link
-                href="#"
+                href="#expert-at"
                 className="flex min-h-10 items-center border-b-2 border-gray-300 hover:border-gray-400 dark:border-gray-700 transition-colors px-4"
               >
                 Contact

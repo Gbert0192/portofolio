@@ -27,7 +27,7 @@ const AboutMe = () => {
           transition={{ duration: 2, ease: "easeInOut" }}
         >
           <div className="flex flex-col gap-2 ">
-            <h1 className="text-6xl">
+            <h1 className="text-4xl md:text-6xl">
               <strong>Hellow.. I am Gilbert Tiofandy,</strong>
             </h1>
             <div className="max-w-150">
